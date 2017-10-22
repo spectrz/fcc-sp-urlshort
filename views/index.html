@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Url Shortener Microservice</title>
+    <style>
+      code {
+        background-color: lightcyan
+      }
+    </style>
+
+  </head>
+  <body>
+    <header>
+      <h1>
+        Url Shortener Microservice
+      </h1>
+    </header>
+    <p/>
+      User Story: I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.
+    <p/>
+      User Story: If I pass an invalid URL that doesn't follow the valid http://www.example.com format, the JSON response will contain an error instead.
+    <p/>
+      User Story: When I visit that shortened URL, it will redirect me to my original link.
+    <p/>
+    <h3>
+      Usage:
+    </h3>
+    Create new short link<br/>
+    <code><label class="location"></label>&lturl&gt</code>
+    <p/>
+      Use short link
+    <br/>
+    <code><label class="location"></label>&lt1234&gt</code>
+    <p/>
+    <h3>
+      Example:
+    </h3>
+    Create:<br/>
+    <code> <label class="location"></label>http://www.google.com</code>
+    <p/>
+    Will return:<br/>
+    <code>
+    Url: http://www.google.com added!<br/>
+    Use fcc-sp-urlshort.glitch.me/1
+    <p/>
+    </code>
+    Use link:<br/>
+    <a href = "/1"><label class="location"></label>1</a>
+    
+    
+    
+    
+    <script> 
+      //document.getElementById("location").innerHTML = "bam";
+      elements = document.getElementsByClassName("location");
+      
+      for ( var i = 0; i < elements.length; i++ ) {
+        elements[i].innerHTML = window.location.href;
+      }
+      
+      document.getElementsById("exLink").href = window.l;
+    </script>
+        
+    
+  </body>
+</html>
